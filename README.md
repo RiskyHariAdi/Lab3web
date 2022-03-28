@@ -88,7 +88,7 @@ Agar tampilan form lebih menarik, bisa ditambahkan CSS seperti berikut.
 ![Foto](Foto/39.png)
   CSS
 
-![Foto](Foto/fotodataikky.png)
+![Foto](Foto/formmahasiswa.png)
 OUTPUT
 
 ![Foto](Foto/fotodataikky.png)
