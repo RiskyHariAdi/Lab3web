@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form dropdown & Listbox with multiple selection</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <style>
+      h1{
+          text-align: center;;
+      }
+      form fieldset{
+          border-style: solid;
+          border-color: rgb(0, 0, 0);   
+          padding: 25px;
+          background-color: rgb(255, 255, 255);
+          background-repeat: no-repeat;
+          background-size: auto;
+          position: absolute; 
+          right: 390px;
+          width: 35%; 
+      }
+      form p > label {
+          display: inline-block;
+          width: 100px;
+      }
+      form input[type="text"], 
+      form textarea {
+          border: 1px solid #197a43;
+      }
+      form input[type="submit"] {
+          border: 1px solid #197a43;
+          background-color: #197a43;
+          color: #ffffff;
+          font-weight: bold;
+          padding: 5px 15px;
+      }
+  </style>
+   </head>
+  <body>
+    <div class="header">
+       
+      </div>
+      <div>
+        <h1>Form Mahasiswa UPB</h1>
+      </div>
+    </div>
+    <form action="proses.php" method="post">
+      <fieldset>
+        <legend><img class="logo" src="Foto/Logo_UPB.png" width="80" title="Logo Univeritas Pelita Bangsa"></legend>
+        <p>
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama">
+      </p>
+      <p>
+          <label for="nim">NIM:</label>
+          <input type="text" id="nim" name="nim">
+      </p>
+      <p>
+          <label for="kelas">Kelas:</label>
+          <input type="text" id="kelas" name="kelas">
+      </p>
+      <p>
+        <label for="Prodi">Prodi :</label>
+        <select name="Prodi">
+          <option value="" selected="selected">--Pilih Prodi--</option>
+          <option value="ti">Teknik Informatika</option>
+          <option value="ts">Teknik Sipil</option>
+          <option value="mj">Manajemen</option>
+        </select>
+      <p>
+        <label for="jurusan">Fakultas :</label>
+        <select multiple name="drawfs" id="jurusan">
+          <option value="ti">Teknik Informatika</option>
+          <option value="ts">Teknik Sipil</option>
+          <option value="mj">Manajemen</option>
+        </select>
+    </p>
+    <p>
+       <label>Jenis Kelamin:</label>
+       <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+for="jk_l">Laki-laki</label>
+      <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+for="jk_p">Perempuan</label>
+</p>
+<p>
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+        <p>
+       
+          <input type="submit" value="Daftar">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
